@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MacBee</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorign>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="stylesheet">
+    </head>
+    <body>
+        <div class="announcement-bar">
+            <p>GOOD FOOD, GOOD MOOD- Made fresh daily in Maramag, Bukidnon!</p>
+        </div>
+
+        <header class="header">
+            <div class="container">
+                <a href="#home" class="brand">
+                    <span>Logo</span>
+                    <span style="font-size: 0.9rem; font-weight:500; color:#666;">MacBee</span>
+                </a>
+
+                <nav class="navbar">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#menu" class="nav-link">Our Menu</a>
+                    <a href="#about" class="nav-link">About Us</a>
+                    <a href="promos" class="nav-link">Promos</a>
+                    <a href="location" class="nav-link">Location</a>
+                    <a href="order" class="btn primary-btn">Order Now</a>
+                </nav>
+                
+                <button class="menu-btn" id="menuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+
+        <div class="overlay" id="overlay">None</div>
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-header">
+                <span style="font-weight:800; font-size: 1.2rem;">Logo</span>
+                <button class="close-btn" id="closeMenu"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#menu" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About Us</a>
+            <a href="#promos" class="mobile-link">Promos</a>
+            <a href="#location" class="mobile-link">location</a>
+            <a href="#order" class="mobile-link order-link"> Order Now</a>
+        </div>
+
+        <main>
+            <section class="hero" id="home">
+                <div class="container">
+                    <div>
+                        <h1 class="hero-title">BIG FLAVORS.<br><span>HAPPY BITES.</span></h1>
+                        <p class="hero-desc">Craving something delicious? MacBee serves fresh, tasty burgers, chicken meals, and value combos right here in Maramag, Bukidnon.</p>
+                        <div class="hero-buttons">
+                            <a href="#menu" class="btn primary-btn">View Menu</a>
+                            <a href="#order" class="btn secondary-btn">Order Now</a>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-image-card">
+                        <img src="https://images.unplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80" alt="Delicious Burger">
+                    </div>
+                </div>
+            </section>
+
+            <section class="features">
+                <div class="container">
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fa-solid fa-burger"></i></div>
+                            <h4>Fresh Food</h4>
+                            <p>Made daily</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fa-solid fa-truck-fast"></i></div>
+                            <h4>Fast Service</h4>
+                            <p>Quick pickup</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fa-solid fa-heart"></i></div>
+                            <h4>Made with Love</h4>
+                            <p>Every meal</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fa-solid fa-peso-sign"></i></div>
+                            <h4>Great Value</h4>
+                            <p>affordable meals</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-padding" id="menu">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Our<span>Menu</span></h2>
+                        <p>Something delicious for every craving</p>
+                    </div>
+
+                    <div class="menu-filters">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="burgers">Burgers</button>
+                        <button class="filter-btn" data-filter="chicken">Chicken</button>
+                        <button class="filter-btn" data-filter="combos">Combos</button>
+                        <button class="filter-btn" data-filter="sides">Sides</button>
+                    </div>
+
+                    <div class="menu-grid" id="menuGrid">
+                        <div class="menu-card" data-category="burgers">
+                            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Classic Burger">
+                            <div class="menu-card-content">
+                                <h3>Classic Burger</h3>
+                                <p>Juicy beef patty with fresh veggies</p>
+                                <div class="menu-card-footer">
+                                    <span classy="price">Ask for Price</span>
+                                    <a href="#order" class="order-btn">Order →</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+
+        </main>
+    </body>
+</html>
