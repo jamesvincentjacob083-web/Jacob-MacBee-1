@@ -9,7 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorign>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <link rel="stylesheet" href="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <div class="announcement-bar">
@@ -19,8 +19,8 @@
         <header class="header">
             <div class="container">
                 <a href="#home" class="brand">
-                    <span>Logo</span>
-                    <span style="font-size: 0.9rem; font-weight:500; color:#666;">MacBee</span>
+                    <span>🐝</span>
+                    <span style="font-size: 0.9rem; font-weight:500; color:#a2be31;"><strong>MacBee</strong></span>
                 </a>
 
                 <nav class="navbar">
@@ -43,7 +43,7 @@
         <div class="overlay" id="overlay">None</div>
         <div class="mobile-menu" id="mobileMenu">
             <div class="mobile-menu-header">
-                <span style="font-weight:800; font-size: 1.2rem;">Logo</span>
+                <span style="font-weight:800; font-size: 1.2rem;">🐝</span>
                 <button class="close-btn" id="closeMenu"><i class="fa-solid fa-xmark"></i></button>
             </div>
             <a href="#home" class="mobile-link">Home</a>
@@ -102,7 +102,7 @@
             <section class="section-padding" id="menu">
                 <div class="container">
                     <div class="section-header">
-                        <h2>Our<span>Menu</span></h2>
+                        <h2>Our <span>Menu</span></h2>
                         <p>Something delicious for every craving</p>
                     </div>
 
@@ -126,9 +126,231 @@
                                 </div>
                             </div>
                         </div>
+                        
+                        <div class="menu-card" data-category="chicken">
+                            <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=600&q=80" alt="Crispy Chicken Meal">
+                            <div class="menu-card-content">
+                                <h3>Crispy Chicken Meal</h3>
+                                <p>Golden fried chicken with rice</p>
+                                <div class="menu-card-footer">
+                                    <span class="price">Ask for Price</span>
+                                    <a href="#order" class="order-btn">Order →</a>
+                                </div>
+                            </div>
+                        </div>
 
-                        <div>
+                        <div class="menu-card" data-category="combos">
+                            <img src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&w=600&q=80" alt="Value Combo">
+                            <div class="menu-card-content">
+                                <h3>Value Combo</h3>
+                                <p>Burger, fries & drink together</p>
+                                <div class="menu-card-footer">
+                                    <span class="price">Ask for Price</span>
+                                    <a href="#order" class="order-btn">Order →</a>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="menu-card" data-category="sides">
+                            <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=600&q=80" alt="Golden Fries">
+                            <div class="menu-card-content">
+                                <h3>Golden Fries</h3>
+                                <p>Hot, crispy, and perfectly salted</p>
+                                <div class="menu-card-footer">
+                                    <span class="price">Ask for Price</span>
+                                    <a href="#order" class="order-btn">Order →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-padding" id="promos" style="background: #e8fbff;">
+                <div class="container">
+                    <div class="promo-wrapper">
+                        <div class="promo-content">
+                            <h2>Special <span>Offers</span></h2>
+                            <p>Great food at even better prices. Check back often for our latest deals and family bundles!</p>
+                            <ul class="promo-list">
+                                <li>✅ Daily combos at low prices</li>
+                                <li>✅ Family meals available</li>
+                                <li>✅ Follow us on Facebook for updates</li>
+                            </ul>
+                            <a href="#order" class="btn primary-btn">Order Now</a>
+                        </div>
+                        <div class="promo-image">
+                            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80" alt="Great Food">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-padding" id="about">
+                <div class="container">
+                    <div class="about-grid">
+                        <div class="about-image">
+                            <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433a?auto=format&fit=crop&w=600&q=80" alt="About MacBee">
+                        </div>
+                        
+                        <div class="about-content">
+                            <h2>Our <span>Story</span></h2>
+                            <p>MacBee Fast Food is a local fast food here in Maramag, Bukidnon. We started because we believe everyone deserves tasty, affordable meals made fresh every day.</p>
+                            <p>Every burger and every meal is prepared with care. Thank you for supporting our small local business!</p>
+                            <a href="#location" class="btn secondary-btn">Visit Us</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-padding" id="order" style="background: #089eaf;">
+                <div class="container">
+                    <div class="order-wrapper">
+                        <h2>Place Your <span>Order</span></h2>
+                        <form id="orderForm">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" placeholder="Juan Dela Cruz" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Contact Number</label>
+                                <input type="tel" id="phone" placeholder="09XX-XXX-XXXX" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="type">Order Type</label>
+                                <select id="type">
+                                    <option>Pickup</option>
+                                    <option>Delivery</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="item">What would you like?</label>
+                                <select id="item">
+                                    <option>Classic Burger</option>
+                                    <option>Crispy Chicken Meal</option>
+                                    <option>Value Combo</option>
+                                    <option>Golden Fries</option>
+                                    <option>Just ask about the menu</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="notes">More Details / Address</label>
+                                <textarea id="notes" rows="3" placeholder="Quantity, special requests, or delivery address"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn primary-btn">Send Order Request</button>
+                            <p style="margin-top: 15px; font-size: 0.85rem; color: #777; text-align: center;"> Contact us directly to order!</p>
+                            <p id="formMessage" style="margin-top: 10px; text-align: center; font-weight: 500;"></p>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-padding" id="location">
+                <div class="container">
+                    <div class="location-grid">
+                        <div class="location-info">
+                            <h2>Find <span>Us</span></h2>
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="info-text">
+                                    <h4>Address</h4>
+                                    <p>P-2 North Poblacion Maramag, Bukidnon</p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+                                    <div class="info-text">
+                                        <h4>Hours</h4>
+                                        <p>PHT+ 8:00AM - 7:00PM</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="info-item">
+                                    <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                                        <div class="info-text">
+                                            <h4>Contact</h4>
+                                            <p>+63 0936-245-6789</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="map-placeholder">
+                                    <i class="fa-solid fa-map-location-dot" style="font-size: 2.5rem; color: #FFC107; margin-bottom: 10px;"></i>
+                                    <p>📍 MacBee Fast Food<br>Maramag, Bukidnon</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
+        
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-brand">🐝<strong>MacBee</strong></div>
+                <p>Good Food. Good Mood.</p>
+                <a href="#home" class="back-top"><strong>⨀ Back to Top</strong></a>
+                <div class="copyright">© 2026 MacBee Fast Food. All rights reserved.</div>
+            </div>
+        </footer>
+        
+        <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const closeMenu = document.getElementById('closeMenu');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const overlay = document.getElementById('overlay');
+
+        function openMenu() {
+            mobileMenu.classList.add('open');
+            overlay.classList.add('open');
+        }
+
+        function closeMenuFunc() {
+            mobileMenu.classList.remove('open');
+            overlay.classList.remove('open');
+        }
+        
+        menuBtn.addEventListener('click', openMenu);
+        closeMenu.addEventListener('click', closeMenuFunc);
+        overlay.addEventListener('click', closeMenuFunc);
+        
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', closeMenuFunc);
+        });
+        
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const menuCards = document.querySelectorAll('.menu-card');
+        
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                const filter = btn.dataset.filter;
+                menuCards.forEach(card => {
+                    if (filter === 'all' || card.dataset.category === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
+        const orderForm = document.getElementById('orderForm');
+        orderForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            document.getElementById('formMessage').textContent = `Thanks, ${name}! We'll get back to you soon.`;
+            orderForm.reset();
+        });
+        
+        </script>
     </body>
 </html>
