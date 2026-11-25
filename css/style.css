@@ -561,6 +561,11 @@ button[type="submit"] {
   height: auto; 
 }
 
+.blend-bg img {
+  mix-blend-mode: screen;
+  background: white;
+}
+
 .footer-brand span {
   color: var(--yellow);
 }
