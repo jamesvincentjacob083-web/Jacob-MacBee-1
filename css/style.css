@@ -66,9 +66,15 @@ button {
 }
 
 .primary-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
   background: var(--yellow);
   color: var(--dark);
   text-align: center;
+
+  
   font-weight: bold;
   border: none;
 }
@@ -561,10 +567,6 @@ button[type="submit"] {
   height: auto; 
 }
 
-.blend-bg img {
-  mix-blend-mode: screen;
-  background: white;
-}
 
 .footer-brand span {
   color: var(--yellow);
