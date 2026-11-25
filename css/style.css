@@ -213,6 +213,7 @@ button {
   padding: 12px 15px;
   margin-bottom: 5px;
   color: #444;
+  border-bottom: 1px solid ;
   border-radius: 8px;
 }
 
@@ -451,6 +452,8 @@ button {
 }
 
 .about-image img {
+  width:400px;
+  height: 300px;
   border-radius: 12px;
 }
 
