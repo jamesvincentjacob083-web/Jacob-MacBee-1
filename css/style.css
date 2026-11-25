@@ -546,9 +546,19 @@ button[type="submit"] {
 }
 
 .footer-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
   font-size: 1.5rem;
   font-weight: 800;
   margin-bottom: 10px;
+}
+
+.footer-brand img {
+  max-width: 50px;
+  height: auto; 
 }
 
 .footer-brand span {
